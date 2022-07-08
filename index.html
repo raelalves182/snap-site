@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-menu">
+      <div>
+        <a href="./"><img src="assets/icons/logo.svg" alt="Logo"></a>
+      </div>
+  
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="#" class="dropbtn" >
+              Features
+            </a>
+            <div class="dropdown-content">
+              <a href="">Todo List</a>
+              <a href="">Calendar</a>
+              <a href="">Reminders</a>
+              <a href="">Planning</a>
+            </div>
+          </li>
+  
+          <li class="dropdown">
+            <a href="#" class="dropbtn" >
+              Company
+            </a>
+            <div class="dropdown-content">
+              <a href="">History</a>
+              <a href="">Our Team</a>
+              <a href="">Blog</a>
+            </div>
+          </li>
+  
+          <li>
+            <a href="#">
+              Careers
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              About
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-right">
+      <button class="header-right__btnOne">
+        <a href="#">Login</a>
+      </button>
+
+      <button class="header-right__btnTwo">
+        <a href="#">Register</a>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-banner">
+      <div class="hero-banner__content">
+        <h1>
+          Make remote work
+        </h1>
+
+        <p>
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+
+        <button>Learn more</button>
+
+        <div class="hero-banner__content--images">
+          <img src="assets/icons/client-databiz.svg" alt="client-databiz">
+          <img src="assets/icons/client-audiophile.svg" alt="client-audiophile">
+          <img src="assets/icons/client-meet.svg" alt="client-meet">
+          <img src="assets/icons/client-maker.svg" alt="client-maker">
+        </div>
+      </div>
+
+      <div class="hero-banner__image">
+        <img src="assets/images/image-hero-desktop.png" alt="image-hero-desktop">
+      </div>
+    </section>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
