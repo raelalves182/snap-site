@@ -92,24 +92,38 @@ img {
       background: transparent;
       cursor: pointer;
       font-weight: 600;
+      border: 0;
+
+      a {
+        text-decoration: none;
+        color: hsl(0, 0%, 41%);
+  
+        &:hover {
+          color: hsl(0, 0%, 8%);
+        }
+      }
     }
 
     &__btnOne {
       border: none;
-      padding: 14px 0;
+
+      a {
+        padding: 14px 0;
+      }
     }
 
     &__btnTwo {
-      padding: 14px 32px;
-      border-radius: 10px;
-      border: 1px solid hsl(0, 0%, 41%);
+      
+      a {
+        border-radius: 10px;
+        padding: 14px 32px;
+        border: 1px solid hsl(0, 0%, 41%);
+    
+        &:hover {
+          border-color: hsl(0, 0%, 8%);
+        }
+      }
     }
-
-    a {
-      text-decoration: none;
-      color: hsl(0, 0%, 41%);
-    }
-
   }
 }
 
@@ -164,12 +178,13 @@ img {
   }
 }
 
-
-.attribution { 
-  font-size: 11px;
-  text-align: center;
-
-  a {
-    color: hsl(228, 45%, 44%);
+footer {
+  .attribution { 
+    font-size: 11px;
+    text-align: center;
+  
+    a {
+      color: hsl(228, 45%, 44%);
+    }
   }
 }

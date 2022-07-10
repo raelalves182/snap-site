@@ -82,19 +82,28 @@ img {
   background: transparent;
   cursor: pointer;
   font-weight: 600;
+  border: 0;
+}
+.header-right button a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 41%);
+}
+.header-right button a:hover {
+  color: hsl(0deg, 0%, 8%);
 }
 .header-right__btnOne {
   border: none;
+}
+.header-right__btnOne a {
   padding: 14px 0;
 }
-.header-right__btnTwo {
-  padding: 14px 32px;
+.header-right__btnTwo a {
   border-radius: 10px;
+  padding: 14px 32px;
   border: 1px solid hsl(0deg, 0%, 41%);
 }
-.header-right a {
-  text-decoration: none;
-  color: hsl(0deg, 0%, 41%);
+.header-right__btnTwo a:hover {
+  border-color: hsl(0deg, 0%, 8%);
 }
 
 .hero-banner {
@@ -140,10 +149,10 @@ img {
      object-fit: cover;
 }
 
-.attribution {
+footer .attribution {
   font-size: 11px;
   text-align: center;
 }
-.attribution a {
+footer .attribution a {
   color: hsl(228deg, 45%, 44%);
 }/*# sourceMappingURL=main.css.map */
