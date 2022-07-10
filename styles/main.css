@@ -32,6 +32,7 @@ img {
 .header-menu nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 .header-menu nav ul a {
@@ -50,6 +51,7 @@ img {
 }
 .header-menu nav ul li.dropdown {
   display: inline-block;
+  position: relative;
 }
 .header-menu nav ul .dropdown-content {
   display: none;
@@ -60,12 +62,20 @@ img {
   min-width: 100px;
   overflow: hidden;
   z-index: 1;
+  right: 0;
+}
+.header-menu nav ul .dropdown-content img {
+  width: auto;
+  margin-right: 10px;
+}
+.header-menu nav ul .right {
+  right: calc(100% - 120px);
 }
 .header-menu nav ul .dropdown-content a {
   color: hsl(0deg, 0%, 41%);
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
+  display: flex;
   text-align: left;
 }
 .header-menu nav ul .dropdown-content a:hover {
@@ -76,6 +86,7 @@ img {
 }
 .header-right {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
 }
 .header-right button {
@@ -132,10 +143,17 @@ img {
 .hero-banner__content button {
   border: none;
   background: hsl(0deg, 0%, 8%);
+  border: 1px solid hsl(0deg, 0%, 8%);
   padding: 14px 32px;
   color: hsl(0deg, 0%, 98%);
   border-radius: 10px;
   cursor: pointer;
+  font-weight: 600;
+}
+.hero-banner__content button:hover {
+  background: #f1f1f1;
+  border: 1px solid hsl(0deg, 0%, 8%);
+  color: hsl(0deg, 0%, 8%);
 }
 .hero-banner__content--images {
   display: flex;
@@ -155,4 +173,35 @@ footer .attribution {
 }
 footer .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 10px;
+  }
+
+  .hero-banner, .hero-banner__content {
+    gap: 40px;
+  }
+  .hero-banner h1, .hero-banner__content h1 {
+    font-size: 40px;
+  }
+  .hero-banner__content--images, .hero-banner__content__content--images {
+    margin-top: 20px;
+    gap: 10px;
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .header-menu nav, .header-right {
+    display: none;
+  }
+
+  .hero-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-banner__content {
+    order: 1;
+  }
 }/*# sourceMappingURL=main.css.map */

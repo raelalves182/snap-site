@@ -32,6 +32,7 @@ img {
     nav ul {
       list-style: none;
       display: flex;
+      flex-wrap: wrap;
       gap: 20px;
 
       a {
@@ -53,6 +54,8 @@ img {
 
       li.dropdown {
         display: inline-block;
+        position: relative;
+        
       }
 
       .dropdown-content {
@@ -64,13 +67,23 @@ img {
         min-width: 100px;
         overflow: hidden;
         z-index: 1;
+        right: 0;
+        
+        img {
+          width: auto;
+          margin-right: 10px;
+        }
       }
 
+      .right {
+        right: calc(100% - 120px);
+      }
+      
       .dropdown-content a {
         color: hsl(0, 0%, 41%);
         padding: 12px 16px;
         text-decoration: none;
-        display: block;
+        display: flex;
         text-align: left;
       }
 
@@ -86,6 +99,7 @@ img {
 
   &-right {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
 
     button {
@@ -155,10 +169,18 @@ img {
     button {
       border: none;
       background: hsl(0, 0%, 8%);
+      border: 1px solid hsl(0, 0%, 8%);
       padding: 14px 32px;
       color: hsl(0, 0%, 98%);
       border-radius: 10px;
       cursor: pointer;
+      font-weight: 600;
+
+      &:hover {
+        background: #f1f1f1;
+        border: 1px solid hsl(0, 0%, 8%);
+        color: hsl(0, 0%, 8%);
+      }
     }
 
   }
@@ -186,5 +208,39 @@ footer {
     a {
       color: hsl(228, 45%, 44%);
     }
+  }
+}
+
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 10px;
+  }
+
+  .hero-banner, .hero-banner__content {
+    gap: 40px;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    &__content--images {
+      margin-top: 20px;
+      gap: 10px;
+      width: 30%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-menu nav, .header-right {
+    display: none;
+  }
+
+  .hero-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-banner__content {
+    order: 1;
   }
 }
