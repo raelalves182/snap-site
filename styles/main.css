@@ -95,8 +95,7 @@ img {
   background: white;
   box-shadow: 0 0 15px -5px hsl(0deg, 0%, 41%);
   display: block;
-  width: 40%;
-  height: 70vh;
+  width: 100%;
   opacity: 0;
   transition: 1s;
   position: absolute;
@@ -104,7 +103,7 @@ img {
   top: 27px;
   text-align: center;
   list-style: none;
-  padding-bottom: 5px;
+  padding: 0 0 12px;
   border-radius: 10px;
 }
 .header-menu .menu-mobile ul .btn-mobile {
