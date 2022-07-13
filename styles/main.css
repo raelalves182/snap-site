@@ -241,6 +241,25 @@ footer .attribution a {
   color: hsl(228deg, 45%, 44%);
 }
 
+@media (max-width: 900px) {
+  .header-menu {
+    gap: 20px;
+  }
+  .header-menu nav ul {
+    gap: 10px;
+  }
+  .hero-banner__content {
+    gap: 40px;
+  }
+  .hero-banner__content h1 {
+    font-size: 60px;
+  }
+  .hero-banner__content--images {
+    justify-content: start;
+    margin-top: 40px;
+    gap: 10px;
+  }
+}
 @media (max-width: 800px) {
   .header {
     display: initial;
