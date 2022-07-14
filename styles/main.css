@@ -47,6 +47,17 @@ img {
   padding: 14px 16px;
   text-decoration: none;
 }
+.header-menu nav ul .dropbtn::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  background: url(../assets/icons/icon-arrow-down.svg) no-repeat center;
+  transition: 0.3s;
+}
+.header-menu nav ul .dropbtn:hover::after {
+  transform: rotate(180deg);
+}
 .header-menu nav ul li a:hover, .header-menu nav ul .dropdown:hover .dropbtn {
   color: hsl(0deg, 0%, 8%);
 }
